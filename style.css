@@ -1,0 +1,63 @@
+/*
+Theme Name: 	amani
+Theme URI: 		https://bekento.space/amani
+Description: 	Authentic WordPress theme focused on content with amazing user experience
+Version: 		6.190408
+Author: 			Bekento
+Author URI: 	https://bekento.space/
+License: 		GNU General Public License version 3.0
+License URI: 	http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain:	amani
+Tags:				Blog, Portfolio, Photography, News
+
+All files, unless otherwise stated, are released under the GNU General Public License
+version 3.0 (http://www.gnu.org/licenses/gpl-3.0.html)
+*/
+
+/*
+
+Looking for styles?
+
+Navigate to "css" folder!
+
+*/
+
+.wp-caption {
+	color: inherit;
+	font-size: inherit;
+}
+
+.wp-caption-text {
+	color: inherit;
+	font-size: inherit;
+}
+
+.sticky {
+	color: inherit;
+	font-size: inherit;
+}
+
+.gallery-caption {
+	color: inherit;
+	font-size: inherit;
+}
+
+.bypostauthor {
+	color: inherit;
+	font-size: inherit;
+}
+
+.alignright { 
+	color: inherit;
+	font-size: inherit;
+}
+
+.alignleft {
+	color: inherit;
+	font-size: inherit;
+}
+
+.aligncenter {
+	color: inherit;
+	font-size: inherit;
+}

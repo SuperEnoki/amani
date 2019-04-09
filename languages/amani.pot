@@ -1,0 +1,349 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: amani\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-20 08:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.1; wp-5.1.1"
+
+#: 404.php:6
+msgid "404"
+msgstr ""
+
+#: parts/customizer.php:280
+msgid "Accent Color"
+msgstr ""
+
+#: parts/customizer.php:264
+msgid "Accent Color Scheme"
+msgstr ""
+
+#. Name of the theme
+msgid "amani"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Authentic WordPress theme focused on content with amazing user experience"
+msgstr ""
+
+#. Author of the theme
+msgid "Bekento"
+msgstr ""
+
+#: parts/tgm.php:33
+msgid "Bekento Tools 2"
+msgstr ""
+
+#: parts/all.php:67
+msgid "Black"
+msgstr ""
+
+#: parts/customizer.php:530
+msgid "Blog Layout"
+msgstr ""
+
+#: parts/customizer.php:429
+msgid "Body Background"
+msgstr ""
+
+#: parts/customizer.php:443
+msgid "Body Background Theme"
+msgstr ""
+
+#: parts/customizer.php:392
+msgid "Body Font"
+msgstr ""
+
+#: parts/customizer.php:411
+msgid "Body Gradient"
+msgstr ""
+
+#: parts/customizer.php:676
+msgid "Chustomize character sets for selected fonts"
+msgstr ""
+
+#: parts/all.php:52
+msgid "Color 1"
+msgstr ""
+
+#: parts/all.php:57
+msgid "Color 2"
+msgstr ""
+
+#: comments.php:30
+msgid "Comments are closed"
+msgstr ""
+
+#: parts/tgm.php:57
+msgid "Contact Form 7"
+msgstr ""
+
+#: parts/customizer.php:247
+msgid "Content"
+msgstr ""
+
+#: parts/customizer.php:459
+msgid "Content Background"
+msgstr ""
+
+#: parts/customizer.php:473
+msgid "Content Background Theme"
+msgstr ""
+
+#: page.php:16 page-full-width.php:9
+msgid "Continue Reading"
+msgstr ""
+
+#: parts/customizer.php:651
+msgid "Copyright Text"
+msgstr ""
+
+#: parts/customizer.php:248
+msgid "Customize your content styling. Detailed info in Documentation"
+msgstr ""
+
+#: parts/customizer.php:701
+msgid "Cyrillic"
+msgstr ""
+
+#: parts/customizer.php:713
+msgid "Cyrillic Extended"
+msgstr ""
+
+#: parts/customizer.php:621
+msgid "Easily customize your website footer. Detailed info in Documentation"
+msgstr ""
+
+#: parts/customizer.php:57
+msgid "Easily customize your website header. Detailed info in Documentation"
+msgstr ""
+
+#: 404.php:5
+msgid "Error 404: Page not found"
+msgstr ""
+
+#: parts/customizer.php:597
+msgid "Exclude Featured Categories from Home Page"
+msgstr ""
+
+#: parts/customizer.php:222 parts/customizer.php:635
+msgid "Featured Users"
+msgstr ""
+
+#: parts/customizer.php:675
+msgid "Font Charsets"
+msgstr ""
+
+#: parts/customizer.php:620
+msgid "Footer"
+msgstr ""
+
+#: parts/all.php:765
+msgid "Full URL e.g. https://www.instagram.com/doyoutravel"
+msgstr ""
+
+#. Name of the template
+msgid "Full-width"
+msgstr ""
+
+#: parts/all.php:72
+msgid "Gray"
+msgstr ""
+
+#: parts/customizer.php:725
+msgid "Greek"
+msgstr ""
+
+#: parts/customizer.php:737
+msgid "Greek Extended"
+msgstr ""
+
+#: parts/customizer.php:56
+msgid "Header"
+msgstr ""
+
+#: parts/customizer.php:311
+msgid "Headings Font"
+msgstr ""
+
+#: parts/customizer.php:344
+msgid "Headings Font Weight"
+msgstr ""
+
+#: parts/customizer.php:610
+msgid "Hide Featured Categories from Meta"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://bekento.space/"
+msgstr ""
+
+#. URI of the theme
+msgid "https://bekento.space/amani"
+msgstr ""
+
+#: parts/customizer.php:748
+msgid ""
+"In this section you can set up social networks. Liks should be with full url "
+"e.g. https://www.instagram.com/doyoutravel/"
+msgstr ""
+
+#: parts/customizer.php:561
+msgid "Infinite Scroll"
+msgstr ""
+
+#: parts/customizer.php:237 parts/customizer.php:665
+msgid "Instagram Username"
+msgstr ""
+
+#: parts/tgm.php:45
+msgid "Instagram Widget"
+msgstr ""
+
+#: parts/customizer.php:136 parts/customizer.php:361
+msgid "Italic"
+msgstr ""
+
+#: parts/customizer.php:689
+msgid "Latin Extended"
+msgstr ""
+
+#: parts/customizer.php:72
+msgid "Logo Font"
+msgstr ""
+
+#: parts/customizer.php:88
+msgid "Logo Font Size"
+msgstr ""
+
+#: parts/customizer.php:120
+msgid "Logo Font Weight"
+msgstr ""
+
+#: parts/customizer.php:183
+msgid "Logo Image"
+msgstr ""
+
+#: meta-min.php:22
+msgid "min"
+msgstr ""
+
+#: parts/customizer.php:31
+msgid ""
+"Multiple values can be selected using cmd / ctrl click. Deselect using cmd "
+"/ctrl"
+msgstr ""
+
+#: parts/all.php:606
+msgid "Next"
+msgstr ""
+
+#: empty-cat.php:3
+msgid "No posts to display"
+msgstr ""
+
+#: search.php:26
+msgid "No search results for:"
+msgstr ""
+
+#: single.php:54
+msgid "Pages:"
+msgstr ""
+
+#: parts/customizer.php:376
+msgid "Post Title Font Size"
+msgstr ""
+
+#: parts/tgm.php:39
+msgid "Post Views Counter"
+msgstr ""
+
+#: parts/all.php:605
+msgid "Previous"
+msgstr ""
+
+#: parts/customizer.php:198
+msgid "Retina Logo"
+msgstr ""
+
+#: search.php:30
+msgid "Return to Home Page"
+msgstr ""
+
+#: empty-cat.php:4 404.php:8
+msgid "Return to home page"
+msgstr ""
+
+#: searchform.php:3
+msgid "Search anything..."
+msgstr ""
+
+#: search.php:7
+msgid "Search results for:"
+msgstr ""
+
+#: searchform.php:3
+msgid "Search..."
+msgstr ""
+
+#: parts/customizer.php:295
+msgid "Secondary Color"
+msgstr ""
+
+#: parts/all.php:425
+msgid "Share this"
+msgstr ""
+
+#: parts/customizer.php:546
+msgid "Show Social Share Under Post"
+msgstr ""
+
+#: parts/customizer.php:152
+msgid "Show Tagline"
+msgstr ""
+
+#: parts/customizer.php:511
+msgid "Sidebar Position"
+msgstr ""
+
+#: parts/all.php:763 parts/customizer.php:747
+msgid "Social Networks"
+msgstr ""
+
+#: parts/customizer.php:168
+msgid "Tagline"
+msgstr ""
+
+#: parts/customizer.php:583
+msgid "Top Featured Category"
+msgstr ""
+
+#: parts/customizer.php:492
+msgid "Top Featured Layout"
+msgstr ""
+
+#: parts/tgm.php:51
+msgid "Twitter Widget"
+msgstr ""
+
+#: parts/customizer.php:104 parts/customizer.php:328
+msgid "Uppercase"
+msgstr ""
+
+#: parts/all.php:62
+msgid "White"
+msgstr ""
+
+#: search.php:27
+msgid "You can either search again or return to Home Page"
+msgstr ""

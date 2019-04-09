@@ -1,0 +1,50 @@
+@import "settings.less";
+@import "font-awesome.less";
+@import "coloring.less";
+
+.editor-post-title__block .editor-post-title__input {
+	text-align: center;
+}
+
+
+
+.wp-block {
+	p {
+		line-height: 170% !important;
+		color: rgba(0, 0, 0, 0.7);
+	}
+	a {
+		color: #222;
+	}
+	max-width: 730px;
+	box-sizing: border-box;
+	h1, h2, h3, h4, h5, h6 { text-rendering: optimizeLegibility; line-height: 140%; }
+	h1 { font-size: 46px; }
+	h2 { font-size: 36px; }
+	h3 { font-size: 30px; }
+	h4 { font-size: 26px; }
+	h5 { font-size: 22px; }
+	h6 { font-size: 18px; }
+}
+
+.wp-block {
+	@import "gutenberg.less";
+}
+
+.wp-block[data-align="left"],
+.wp-block[data-align="right"] {
+	.editor-block-list__block-edit {
+		max-width: @post / 2;
+	}
+}
+
+[data-align=left] .wp-block-cover, [data-align=left] .wp-block-cover-image, [data-align=right] .wp-block-cover, [data-align=right] .wp-block-cover-image {
+	max-width: @post / 2 !important;
+}
+
+.wp-block[data-type="core/pullquote"][data-align="wide"],
+.wp-block[data-type="core/pullquote"][data-align="full"] {
+	blockquote {
+		text-align: center;
+	}
+}

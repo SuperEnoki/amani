@@ -1,0 +1,32 @@
+8 April 2019
+
+- Added top featured layout - Slideshow
+- Fixed author block size in archive on mobile devices
+- Changed font to smaller in search box on mobile devices
+- Fixed main menu submenus alignment
+- Fixed main menu overflowing to right side
+
+2 April 2019
+
+- Moved OpenGraph Meta tags to Bekento Tools
+- Fixed theme color for Mobile Google Chrome address bar
+- Added extra color settings (based on color scheme) to Gutenbrg editor
+
+1 April 2019
+
+- Moved Social Share buttons to plugin Bekento Tools
+- Moved Author Social Links to plugin Bekento Tools
+- Added option to disable category colors
+
+31 March 2019
+
+- Added ImagesLoaded function to Instagram
+- Fixed paddings in archive header on mobile devices
+- Fixed search icon in responsive menu with admin bar
+- Improved styling of chat/status/link posts on mobile devices
+
+30 March 2019
+
+- Added search icon to responsive menu
+- New layout - Grid with 3 columns when no sidebar is visible
+- Fixed issue with Instagram feed containing post from Instagram TV

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Theme Documentation</title>
+</head>
+<body>
+
+
+<div class='sidebar'>
+
+	<div>
+		<div><a href='#1'><strong>1. Quick Start</strong></a></div>
+			<div><a href='#1.1'>1.1 Theme Installation</a></div>
+			<div><a href='#1.2'>1.2 Recommended Plugins Installation</a></div>
+			<div><a href='#1.3'>1.3 Quick Start</a></div>
+		<div><a href='#2'><strong>2. Advanced Customization</strong></a></div>
+			<div><a href='#2.1'>2.1 Site Identity</a></div>
+			<div><a href='#2.2'>2.2 Header</a></div>
+			<div><a href='#2.3'>2.3 Content</a></div>
+			<div><a href='#2.4'>2.4 Foooter</a></div>
+			<div><a href='#2.5'>2.5 Font Charsets</a></div>
+			<div><a href='#2.6'>2.6 Social Networks</a></div>
+			<div><a href='#2.7'>2.7 Menus</a></div>
+			<div><a href='#2.8'>2.8 Widgets</a></div>
+			<div><a href='#2.9'>2.9 Static Front Page</a></div>
+			<div><a href='#2.10'>2.10 Additional CSS</a></div>
+		<div><a href='#3'><strong>3. Plugins and Widgets</strong></a></div>
+			<div><a href='#3.1'>3.1 Twitter Widget</a></div>
+			<div><a href='#3.2'>3.2 Instagram Widget</a></div>
+			<div><a href='#3.3'>3.3 Profile Widget</a></div>
+			<div><a href='#3.4'>3.4 Contact Form 7</a></div>
+			<div><a href='#3.5'>3.5 Thumbnail Category Posts</a></div>
+		<div><a href='#4'><strong>4. Content</strong></a></div>
+			<div><a href='#4.1'>4.1 Demo Content</a></div>
+			<div><a href='#4.2'>4.2 Custom Content</a></div>
+			<div><a href='#4.3'>4.3 Featured Posts</a></div>
+			<div><a href='#4.4'>4.4 Translation (localization)</a></div>
+		<div><a href='#5'><strong>5. FAQ</strong></a></div>
+		<div><a href='#6'><strong>6. GDPR / Data Protection</strong></a></div>
+		<div><a href='#7'><strong>7. Support and Updates</strong></a></div>
+
+	</div>
+
+</div><!-- sidebar -->
+
+<div class="container">
+
+	<div class='column'>
+
+		<h1>WordPress Theme Documentation</h1>
+		<small>Docs Release v. 1.181212</small>
+
+		<!-- 
+		
+		1 INSTALLATION
+
+		-->
+
+		<h2><a name='1'></a>Quick Start</h2>
+
+		<h3><a name='1.1'></a>Theme Installation</h3>
+
+			<p>Before you start download the theme and find the .xml demo data in archive.</p>
+
+			<ol>
+				<li>Login to the WordPress Dashboard</li>
+				<li>Go to Appearance > Themes</li>
+				<li>Click "Add New" button</li>
+				<li>Click "Upload Theme"</li>
+				<li>Click on the select file / browse and find the directory with theme zip file</li>
+				<li>Press "Install Now" button</li>
+				<li>After a successful installation, click on Activate</li>
+				<li>If you've done everything correctly your theme is installed and you can proceed to <a href='#1.2'>Plugins Installation</a></li>
+			</ol>
+			
+			<p><img src="http://i.imgur.com/9yzk4KK.png"/></p>
+
+			<p>Notice: If you have an error during installation like this:</p>
+			<blockquote>Are you sure you want to do this?</blockquote>
+			<p>It is probably that you're trying to use the full theme archive instead of just a WordPress theme. Try to unzip this archive and find the theme file inside</p>
+			<p>If you're still having issues try installing theme manually using FTP client</p>
+
+		<h3><a name='1.2'></a>Recommended Plugins Installation</h3>
+
+			<ol>
+				<li>Go to Appearance > Install Plugins</li>
+				<li>Find "Instagram Widget" and click "Install"</li>
+				<li>Next you'll see text "Plugin activated successfully." click "Return to Required Plugins Installer"</li>
+				<li>Repeat the steps if you need any other plugins</li>
+			</ol>
+
+			<p><img src="http://i.imgur.com/909CyC8.png"/></p>
+
+		<h3><a name='1.3'></a>Quick Start</h3>
+
+			<ol>
+				<li><strong>Before you start: Follow the previous steps 1.1 & 1.2</strong></li>
+				<li>Download "Demo Data" from Marketplace and unzip it, you will see the .xml files</li>
+				<li>Select the xml file with the name of chosen style set demo</li>
+				<li>Go to Tools > Import</li>
+				<img src="https://i.imgur.com/igYgp92.png" />
+				<li>Select WordPress from the list, it will move you to Importer Plugin itself or installation page</li>
+				<li>Click "Install Now" if you haven't installed this plugin yet</li>
+				<li>After WordPress Importer Plugin installation click on Activate Plugin & Run Importer link</li>
+				<li>Select chosen demo .xml file from your computer</li>
+				<img src="https://i.imgur.com/8b5vKDZ.png" />
+				<li>Click on button "Upload file and Import"</li>
+				<li>In "Assign authors" you can either add new user or select existing WordPress author to add default posts and pages to and enable checkbox - Download and import file attachments if you want to import images from demo (in case they are available)</li>
+				<img src="https://i.imgur.com/5mps7KN.png" />
+				<li>After you've assigned authors click "Submit" button and demo content without images should be imported</li>
+				<li>Now add Featured Images to each post,they are not included with theme because they are licensed only for one domain, you can choose your own images. Posts - Edit - Featured Image - Upload / Select image. Each post should have featured image for the best experience.</li>
+				<li>Featured Users information - go to Users > All Users > Edit user you want to feature. <strong>Change the user role to at least Author</strong>, imported users are Subscribers and can't be featured. Add the "Biographical Info", "Instagram Username" and Social Networks links. Do the same for the second/third/fourth author you want to feature.</li>
+				<li>Featuring User - Go to Appearance > Customize > Header > Featured Users and select the featured user. You can use Command/Ctrl + mouse click to select multiple users.</li>
+				<li>Top Featured Posts - Appearance > Customize > Content > Top Featured Category select the existing category you want to be featured. You can add new category in Posts > Categories. Make sure you have featured images set in posts for best experience.</li>
+				<li>Bottom "Editor's Picks" Posts - Appearance > Customize > Content > Bottom Featured Category select the existing category you want to be featured. You can add new category in Posts > Categories. Make sure you have featured images set in posts for best experience.</li>
+				<li>Widgets - Navigate to Appearance > Widgets. Move (drag-and-drop) widgets "Thumbnail Category Posts" and "Travel Recent Posts" from Available Widgets to Sidebar area, you can add widget title and select the category you want. Click "Save" on each widget after you've done editing</li>
+				<li>Footer menu - Go to Appearance > Menus - Add new menu, select the items and add them to menu and check the "Footer Navigation" Display location. Click "Save Menu".</li>
+				<li>Footer Instagram - Go to Appearance > Customize > Footer > "Instagram Username" and enter your instagram username (e.g. doyoutravel)</li>
+				<li>You've done customizing main style. Now you can change the style set go to Appearance > Customize > Content > Style Set</li>
+			</ol>
+		<!-- 
+		
+		2 CUSTOMIZE
+
+		-->
+
+		<h2><a name='2'></a>Advanced Customization</h2>
+
+			<p>Every theme styling option and setting is located in theme customizer. Navigate to Appearance > Customize and try out all settings</p>
+
+			<p>After you're done with editing click "Save & Publish". If you won't do this changes won't be saved.</p>
+
+			<p><em>Hint: Before you start - look at all available and popular fonts <a href="http://fonts.google.com/">here</a>.</em></p>
+
+		<h3><a name='2.1'></a>Site Identity</h3>
+
+			<ul>
+				<li>"Site Title" - Change the title of your website if you need</li>
+				<li>"Tagline" - Describe what is your website or blog about</li>
+				<li>"Icon" - You can upload custom favicon. It will be displayed on the left side of the browser tab</li>
+			</ul>
+
+		<h3><a name="2.2"></a>Header</h3>
+
+		<ul>
+			<li>"Logo Font" - Select font for logo if you did not upload custom logo image</li>
+			<li>"Logo Font Size" - Size of logo font (in pixels, optimal value: 48px)</li>
+			<li>"Uppercase" - Check if you want to use all capital letters in logo</li>
+			<li>"Logo Font Weight" - Font weight of logo. Make sure selected font supports weight you're planning to use</li>
+			<li>"Italic" - Make cursive logo font</li>
+			<li>"Show Tagline" - Check if you want to show your website tagline under logo</li>
+			<li>"Tagline" - Enter tagline text you want to feature under logo</li>
+			<li>"Logo Image" - Upload custom logo image (use .png image with x2 size for retina displays) or leave it blank for text logo</li>
+			<li>"Retina Logo" - Check this option if you've uploaded the retina logo image (x2 size of original logo)</li>
+			<li>"Featured Users" - Select users you want to feature in header (minimum required role - author)</li>
+			<li>"Instagram Username" - Username for the Instagram feed in header e.g. "doyoutravel"</li>
+		</ul>
+
+		<h3><a name="2.3"></a>Content</h3>
+
+		<ul>
+			<li>"Accent Color Scheme" - Select main theme color from one of the available schemes</li>
+			<li>"Accent Color" - Custom main theme accent color</li>
+			<li>"Secondary Color" - Custom secondary theme color</li>
+			<li>"Headings Font" - Select font for headings</li>
+			<li>"Uppercase" - Check if you want to capitalize letters in headings</li>
+			<li>"Headings Font Weight" - Font Weight of Headings. Make sure selected font supports weight you're planning to use</li>
+			<li>"Italic" - Make cursive headings font</li>
+			<li>"Post Title Font Size" - Font Size of Posts Title (in pixels, optimal value: 48px)</li>
+			<li>"Body Font" - Select font for basic website text - paragraphs, links, etc.</li>
+			<li>"Body Gradient" - Select solid color or the direction of gradient (taken from Accent color and Secondary color)</li>
+			<li>"Body Background" - Color for solid Background</li>
+			<li>"Body Background Theme" - If you have a light background or gradient it's better to change this to "White", in case you have dark body background or gradient switch it to "Dark"</li>
+			<li>"Content Background" - Background for content area (post list, categories, singular posts and pages)</li>
+			<li>"Content Background Theme" - Switch this to "Dark" if you prefer black or dark background of content</li>
+			<li>"Top Featured Layout" - Select the layout for Top Featured posts</li>
+			<li>"Sidebar Position" - Set the position of sidebar or hide it completely</li>
+			<li>"Blog Layout" - Select the layout of blog posts in categories, archives and on home page</li>
+			<li>"Show Social Share Under Post" - Show the "Share" block under the singular post (requires Bekento Tools plugin)</li>
+			<li>"Infinite Scroll" - Hide pages pagination and enable infinite scroll</li>
+			<li>"Top Featured Category" - Set the Top Featured posts category</li>
+			<li>"Bottom Featured Category" - Set the Bottom Featured posts category</li>
+			<li>"Exclude Featured Categories from Home Page" - Exclude posts that are featured from home page</li>
+			<li>"Hide Featured Categories from Meta" - Don't display the featured category name in meta</li>
+		</ul>
+
+		<h3><a name="2.4"></a>Footer</h3>
+
+		<ul>
+			<li>"Featured Users" - Select users you want to feature in footer</li>
+			<li>"Copyright Text" - Custom footer copyright text</li>
+			<li>"Instagram Username" - Username for the Instagram feed in footer e.g. "doyoutravel"</li>
+		</ul>
+
+		<h3><a name='2.5'></a>Font Charsets</h3>
+
+			<p>You can check custom subsets for fonts if needed</p>
+
+		<h3><a name='2.6'></a>Social Networks</h3>
+
+			<p>Add all your social networks that will appear in footer, header and responsive navigation for mobile and tablet devices</p>
+			<p>Social networks are plain links on your profile e.g.</p>
+			<blockquote>https://www.instagram.com/doyoutravel/</blockquote>
+
+		<h3><a name='2.7'></a>Menus</h3>
+
+			<ol>
+				<li>Click "Add Menu"</li>
+				<li>Enter new menu name in appeared box</li>
+				<li>Click "Create Menu"</li>
+				<li>Click "Add Items"</li>
+				<li>Mark every page, post or other item that will be in the menu</li>
+				<li>After editing menu you can rearrange items by dragging and dropping them or clicking "Reorder" button, you can also create sub-menus</li>
+				<li>In "Menu locations" mark desired location of the created menu</li>
+			</ol>
+
+		<h3><a name='2.8'></a>Widgets</h3>
+
+			<ol>
+				<li>Select the Widget Area you want to add Widgets to</li>
+				<li>Click "Add a Widget"</li>
+				<li>Select a Widget you want to add</li>
+				<li>After a Widget is added you can customize it</li>
+				<li>Reorder Widgets by dragging and dropping them or clicking "Reorder" button</li>
+			</ol>
+
+		<h3><a name='2.9'></a>2.9 Static Front Page</h3>
+
+			<p>If you don't want the default WordPress blog layout of your home page, you can select a static front page.</p>
+			<p>Select from drop-down Front Page and Posts page, after it you can link Posts page (default blog layout in menus).</p>
+
+		<h3><a name='2.10'></a>2.10 Additional CSS</h3>
+
+			<p>If you want to modify your theme please copy and paste code here rather than just edit the CSS files (they can be re-written after update, and this setting keeps your custom CSS forever).</p>
+
+		<!-- 
+		
+		3 Widgets & Plugins
+
+		-->
+
+		<h2><a name='3'></a>Plugins and Widgets</h2>
+
+			<p>If you did not install plugins for widgets please follow step #1.2</p>
+			<p>After you have all recommended plugins installed navigate to Appearance > Widgets</p>
+
+		<h3><a name='3.1'></a>Twitter Widget</h3>
+
+			<ol>
+				<li>Add "Twitter" Widget to Widget Area</li>
+				<li>"Title" - Enter the title of Widget, you can enter anything or leave blank</li>
+				<li>"Number of Tweets" - Select number of displayed tweets</li>
+				<li>"Time in Minutes between updates" - select the time between updates, use 5 minutes for best experience</li>
+				<li>Go to <a href="https://apps.twitter.com/">https://apps.twitter.com/</a> and sign in (you should have Twitter account, if not - register).</li>
+				<li>Center of the screen click "Create a New Application."</li>
+				<li>Enter a unique name (anything you want), a description (again this is just for you), and your site's URL. You can leave the Callback URL empty as it is not used for this implementation.</li>
+				<li>You will be taken to a new screen, there's one more step then you can copy all the details into correct fields of the Widget and be on your way.</li>
+				<li>OK, click the "Create my Access Token" button. This is a shortcut to authenticate your own account with your application (so you never need use your password).</li>
+				<li>Click the Details Tab as all the information you need is presented hereso you can just copy the required information into the exact corresponding inputs fields of the Widget "Twitter API Settings".</li>
+				<li>Click "Save"</li>
+			</ol>
+
+		<h3><a name='3.2'></a>Instagram Widget</h3>
+
+			<ol>
+				<li>Add "Instagram" Widget to Widget Area</li>
+				<li>"Title" - Enter the title of Widget, you can enter anything or leave blank</li>
+				<li>"Username" - Enter your Instagram account username</li>
+				<li>"Number of photos" - Enter any even value for best experience (2, 4, 6, etc.)</li>
+				<li>"Photo size" - you can select photo size for embed Instagram images, use "Large" for best experience</li>
+				<li>"Open links in" - you can select "New Window" so all links to Instagram will be opened in new tabs</li>
+				<li>"Link text" - not used in theme, leave it blank</li>
+				<li>Click "Save"</li>
+			</ol>
+
+		<h3><a name='3.3'></a>Profile Widget</h3>
+
+			<ol>
+				<li>Add "Profile" Widget to Widget Area</li>
+				<li>"Title" - Enter the title of Widget, you can enter anything or leave blank</li>
+				<li>"User" - Select user you want to feature</li>
+				<li>Click "Save"</li>
+			</ol>
+
+		<h3><a name='3.4'></a>Contact Form 7</h3>
+
+			<p>Open the Contact > Contact Forms menu on your WordPress administration panel. You can manage multiple contact forms there.</p>
+			<p>Just after installing the Contact Form 7 plugin, you'll see a default form named "Contact form 1", and a code like this:</p>
+			<blockquote>[contact-form-7 id="1234" title="Contact form 1"]</blockquote>
+			<p>Copy this code. Then, open the edit menu of the page Page > Edit into which you wish to place the contact form. A popular practice is creating a page named "Contact" for the contact form page. Paste the code you copied into the contents of the page.</p>
+			<p>Now your contact form setup is complete. Visitors to your site can now find the form and start submitting messages to you.</p>
+
+			<p>Info on advanced Contact Form configuration is located at <a href="http://contactform7.com/docs/">official Conatct Form 7 page</a></p>
+		
+		<h3><a name='3.5'></a>Thumbnail Category Posts</h3>
+
+			<ol>
+				<li>You can add multiple widgets of this type</li>
+				<li>Add "Thumbnail Category Posts" Widget to Widget Area</li>
+				<li>"Title" - Enter the title of Widget, you can enter anything or leave blank</li>
+				<li>"Category" - Select the category you want to feature or select all categories</li>
+				<li>"Number of posts to show" - How many posts to show in widget</li>
+				<li>"Thumbnails" - Show or hide post thumbnails - mark this to show thumbnails</li>
+				<li>"Travel Markers" - Cool Travel markers to show where you've been and where you are heading</li>
+				<li>"Most Viewed" - Most viewed posts first (requires additional plugin "Posts views counter")</li>
+				<li>Click "Save"</li>
+			</ol>
+
+		<!-- 
+		
+		4 CONTENT
+
+		-->
+
+		<h2><a name='4'></a>Content</h2>
+
+		<h3><a name='4.1'></a>Demo Content</h3>
+
+			<p>To configure your theme correctly be sure that you have a demo data .xml file downloaded.</p>
+			<ol>
+				<li>Go to WordPress Admin panel</li>
+				<li>Navigate to Tools > Import</li>
+				<li>Select WordPress from the list, it will move you to Importer Plugin itself or installation page</li>
+				<li>Click Install Now if you haven't installed this plugin yet</li>
+				<li>After WordPress Importer Plugin installation click on Activate Plugin & Run Importer link</li>
+				<li>Choose downloaded Theme .xml file from your computer</li>
+				<li>Click on button "Upload file and Import"</li>
+				<li>In "Assign authors" you can either add new user or select existing WordPress author to add default posts and pages to and enable checkbox - Download and import file attachments if you want to import images from demo (in case they are available)</li>
+				<li>After you've assigned authors click "Submit" button and everything should be imported!</li>
+			</ol>
+
+		<h3><a name='4.2'></a>Custom Content</h3>
+
+			<p>To add simple blog post to your website navigate to Posts > Add New, in the appeared page add Post Title and Post Content just like in every other blog.</p>
+			<p>After you've done if you need an image to be added to post click "Set featured image" in the bottom right part of the current page sidebar and upload the image by dragging and dropping it in the area, mark the image and click "Set featured image"</p>
+			<p>If you need - add tags and categories in sidebar, you can also create new categories right in post</p>
+			<p>Posting a quote or video? You can just select desired post format in "Format" sidebar</p>
+			<p>Don't forget to click "Publish" or "Update", otherwise the edits won't be saved</p>
+			<p>To add a page navigate to Pages > Add New and fill the content there</p>
+			<p>As well, Don't forget to click "Publish" or "Update", otherwise the edits won't be saved</p>
+
+		<h3><a name='4.3'></a>Featured Posts</h3>
+
+			<p>Go to Appearance > Customize > Content > Top Featured Category select the existing category you want to be featured. You can add new category in Posts > Categories. Make sure you have featured images set in posts for best experience</p>
+
+		<h3><a name='4.4'></a>Translation (localization)</h3>
+
+			<ol>
+				<li>Login to WordPress Dashboard and Navigate to Plugins > Add New</li>
+				<li>In the search field enter "Loco Translate"</li>
+				<p><img src="http://i.imgur.com/WDrsezT.png"/></p>
+				<li>In the box of "Loco Translate" plugin click "Install Now"</li>
+				<li>Wait for the text "Successfully installed the plugin Loco Translate" to appear</li>
+				<li>Click "Activate Plugin"</li>
+				<li>Navigate to Loco Translate > Themes</li>
+				<li>Find the theme you want to translate, click it</li>
+				<p><img src="http://i.imgur.com/SJQdL56.png"/></p>
+				<li>Click on a link "Create Template"</li>
+				<li>Click blue button "Create Template"</li>
+				<p><img src="http://i.imgur.com/W0FJgIC.png"/></p>
+				<li>After it you'll see message "OK: Template file created", click "New Language"</li>
+				<p><img src="http://i.imgur.com/PmA9NyO.png"/></p>
+				<li>Select language you want theme to be translated to and click "Start Translating"</li>
+				<li>Translate everything you want (You can use searchbar to translate particular text)</li>
+				<li>After you translate every needed string click "Save"</li>
+				<p><img src="http://i.imgur.com/v3oqVSS.png"/></p>
+				<li>Congratulations! Your website should be translated now!</li>
+			</ol>
+
+		<h2><a name='5'></a>FAQ</h2>
+			
+			<div class='faq'>
+				<strong>What featured image size to use</strong>
+				<p>Recommended using image with dimension 16:9 or 16:10 with a size over 1920x1080 pixels or higher. This should make your featured image look great both on retina, mobile/tablet and standard displays :)</p>
+
+				<strong>Can't change fonts</strong>
+				<p>Some fonts don't have all font weights available. Go to Apperance > Customize > Header > Logo Font Weight and switch the font weight to "400 Regular" and see if this helps. Do this for each font you are using. To see what Font Weight can be selected for each font go to <a href="https://fonts.google.com/">fonts.google.com</a> find the font you want to use, hover the font and click on second dropdown.</p>
+
+				<strong>How to add posts to top featured like in demo</strong>
+				<p>Appearance > Customize > Content > Top Featured Category select the existing category you want to be featured. You can add new category in Posts > Categories. Make sure you have featured images set in posts for best experience</p>
+
+				<strong>Instagram Feed is not updating</strong>
+				<p>Check if you're using caching plugin and if you have one clear the website cache. The cache of the Instagram Widget is clearing every hour, if you want to update it manually you can use this plugin: <a href="https://en-gb.wordpress.org/plugins/artiss-transient-cleaner/">artiss-transient-cleaner</a> It will remove all cached transient values. Also check if Instagram is not down at <a href="http://downdetector.com/status/instagram">Downdetector</a></p>
+
+				<strong>I'm having issue with Internet Explorer 10</strong>
+				<p>Unfortunately, theme does not support older browser versions</p>
+
+				<strong>I'm stuck! Help...</strong>
+				<p>You can always contact me at theme comments section if you're having any issues with theme</p>
+			</div>
+
+
+		<h2><a name='6'></a>GDPR / Data Protection</h2>
+
+			<p>Please read this section carefully. Violating Data Protection / GDPR rules could result in fines depending on country.</p>
+
+			<p>Theme does not collect any data and does not store any visitor information, selecting and using Google Fonts could be a violation of GDPR. Some plugins bundled in theme could violate GDPR rules.</p>
+
+			<p>Theme uses remote connection to Google servers if Google Font is selected, this could result in GDPR violation. The solution is to select Helvetica / Georgia font that will be used from local file available both on Mac, Windows, Android and Linux. Theme will use default OS font as a fallback.</p>
+
+			<p>If you're using Instagram widget there will be a remote connection to Instagram servers, this could be potentially violation of GDPR rules for users. The solution is to disable Instagram plugin.</p>
+
+			<p>Twitter widget will connect to twitter servers, it could be potentially violation of GDPR rules for users. The solution is to disable Simple Twitter Tweets plugin.</p>
+
+			<p>Post Views Counter. This plugin does not collect any personalized information, but to fully comply with european GDPR rules it is recommended to disable it.</p>
+
+			<p>Contact Form 7. Disabling this plugin is recommended.</p>
+
+			<p>Disable all other third-party plugins, you can't be 100% sure about their GDPR compliance and make sure you are not using Google Analytics, Google Ads and any other Google / Facebook, etc. service, they potentially could have loopholes and could violate GDPR.</p>
+
+		<h2><a name='7'></a>Support and Updates</h2>
+
+			<p>You can always contact us at theme comments section if you're having issues with installation, configuration or just want to submit a bug report.</p>
+
+			<p>You can get all fresh updates from Marketplace Downloads section.</p>
+
+	</div><!-- column -->
+
+</div><!-- container -->
+
+<style>
+
+* { margin: 0; padding: 0; }
+
+a {
+	text-decoration: none;
+	color: #eeaa00;
+}
+
+blockquote {
+	background: #f9f9f9;
+	padding: 20px;
+	border-left: 3px solid #eee;
+	margin-bottom: 20px;
+	line-height: 150%;
+}
+
+body {
+	line-height: 130%;
+	color: #445;
+	font-weight: 400;
+}
+
+body, h1,h2,h3,h4,h5,h6 {
+	font-family: Segoe UI, sans-serif;
+}
+
+p {
+	line-height: 150%;
+	margin-bottom: 20px;
+}
+
+.notice {
+	font-size: 20px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	text-transform: uppercase;
+	line-height: 130%;
+	margin-bottom: 30px;
+	font-weight: 400;
+}
+
+h2 {
+	border-top: 2px solid #444;
+	padding-top: 30px;
+	margin-top: 40px;
+	padding-bottom: 0;
+	margin-bottom: 40px;
+	line-height: 100%;
+}
+
+iframe {
+	width: 100%;
+	height: 400px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	max-width: 720px;
+}
+img { max-width: 720px; }
+
+ul {
+	list-style: square;
+	margin-left: 40px;
+	margin-bottom: 30px;
+}
+
+ol {
+	margin-left: 40px;
+	margin-bottom: 30px;
+}
+
+	ol img {
+		margin-bottom: 25px;
+		margin-top: 15px;
+		box-shadow: 1px 1px 9px rgba(0,0,0,0.25);
+	}
+
+li {
+	padding-left: 10px;
+	margin-left: 10px;
+	margin-bottom: 15px;
+	line-height: 180%;
+}
+
+h3,h4,h5,h6 {
+	padding-top: 10px;
+	padding-bottom: 20px;
+	margin: 0;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 34px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 22px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+em {
+	color: #777;
+}
+
+.container {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-left: 400px;
+	max-width: 900px;
+}
+
+.faq strong {
+	font-weight: 600;
+	margin-bottom: 5px;
+	display: block;
+}
+
+.faq strong:before, .faq p:before {
+	content: '\2013  ';
+}
+
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow-y: scroll;
+	z-index: 100;
+	height: 100%;
+	box-sizing: border-box;
+	width: 350px;
+}
+
+	.sidebar > div {
+		padding: 50px 30px;
+	}
+	.sidebar > div > div {
+		margin-bottom: 10px;
+	}
+	.sidebar strong {
+		text-transform: uppercase;
+		font-weight: 400;
+		border-bottom: 1px solid #ccc;
+		color: #000;
+	}
+	.sidebar a {
+		color: #666;
+	}
+
+.sidebar h2 {
+	border-top: 0;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+@media (max-width: 1250px) {
+	.sidebar {
+		position: relative;
+		overflow-y: auto;
+	}
+	.container {
+		 max-width: 770px !important;
+		 margin-right: 0 !important;
+		 margin-left: 0 !important;
+		 padding: 20px;
+	}
+}
+
+
+</style>
+
+</body>
+
+</html>
