@@ -6,9 +6,6 @@
 
 	if(have_posts()):
 
-		$amani_posts_iterate = 0;
-		$ppp = floor((int) get_option('posts_per_page') / 3);
-
 		?>
 
 		<div class="blog-feed">

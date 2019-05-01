@@ -10,6 +10,8 @@
 
 			<div class='post-header'>
 
+				<?php get_template_part('meta-category'); ?>
+
 				<h1 class='post-title entry-title'>
 					<span><?php the_title(); ?></span>
 				</h1>
@@ -28,6 +30,8 @@
 
 			<?php if(!has_post_thumbnail()) { ?>
 
+				<?php get_template_part('meta-category'); ?>
+				
 				<div class='post-header'>
 
 					<h1 class='post-title entry-title'>

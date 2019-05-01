@@ -1,3 +1,27 @@
+1 May 2019
+
+- Added styles for image / gallery post in grid layout
+- Fixed excerpt not showing for image / gallery post in grid layout
+
+28 April 2019
+
+- Added related posts
+- Featured images inside posts are now full width
+
+27 April 2019
+
+- Centerd user profiles on mobile
+- Fixed active menu with dropdown not having a dropdown icon
+- Fixed slideshow overflowing main content before images loaded (on slow connections)
+
+14 April 2019
+
+- Fixed widgets padding on mobile devices
+- Added Bekento Tools plugin inside theme folder - now installs locally
+- Centered pagination on mobile devices
+- Large screens now show full-width Instagram
+- Category description is now centered
+
 8 April 2019
 
 - Added top featured layout - Slideshow

@@ -494,60 +494,66 @@ function amani_customize_register($wp_customize) {
 
 	// Top Featured Layouts
 
-	$top_featured_layouts = array_flip($amani['top_featured_layouts']);
+	if($amani['top_featured_layout'] != '') {
+		$top_featured_layouts = array_flip($amani['top_featured_layouts']);
 
-	$wp_customize->add_setting('amani_options[top_featured_layout]', array(
-		'default' => $amani['top_featured_layout'],
-		'sanitize_callback' => 'sanitize_text_field',
-		'capability' => 'edit_theme_options',
-		'type' => 'option',
-		'transport' => 'postMessage'
-	));
-	$wp_customize->add_control('amani_options[top_featured_layout]', array(
-		'settings' => 'amani_options[top_featured_layout]',
-		'label' => esc_html__('Top Featured Layout', 'amani'),
-		'section' => 'amani_options[content]',
-		'type' => 'select',
-		'choices' => $top_featured_layouts,
-	));
+		$wp_customize->add_setting('amani_options[top_featured_layout]', array(
+			'default' => $amani['top_featured_layout'],
+			'sanitize_callback' => 'sanitize_text_field',
+			'capability' => 'edit_theme_options',
+			'type' => 'option',
+			'transport' => 'postMessage'
+		));
+		$wp_customize->add_control('amani_options[top_featured_layout]', array(
+			'settings' => 'amani_options[top_featured_layout]',
+			'label' => esc_html__('Top Featured Layout', 'amani'),
+			'section' => 'amani_options[content]',
+			'type' => 'select',
+			'choices' => $top_featured_layouts,
+		));
+	}
 
 	// Sidebar Position
 
-	$sidebar_positions = array_flip($amani['sidebar_positions']);
+	if($amani['sidebar_position'] != '') {
+		$sidebar_positions = array_flip($amani['sidebar_positions']);
 
-	$wp_customize->add_setting('amani_options[sidebar_position]', array(
-		'default' => $amani['sidebar_position'],
-		'sanitize_callback' => 'sanitize_text_field',
-		'capability' => 'edit_theme_options',
-		'type' => 'option',
-		'transport' => 'postMessage'
-	));
-	$wp_customize->add_control('amani_options[sidebar_position]', array(
-		'settings' => 'amani_options[sidebar_position]',
-		'label' => esc_html__('Sidebar Position', 'amani'),
-		'section' => 'amani_options[content]',
-		'type' => 'select',
-		'choices' => $sidebar_positions,
-	));
+		$wp_customize->add_setting('amani_options[sidebar_position]', array(
+			'default' => $amani['sidebar_position'],
+			'sanitize_callback' => 'sanitize_text_field',
+			'capability' => 'edit_theme_options',
+			'type' => 'option',
+			'transport' => 'postMessage'
+		));
+		$wp_customize->add_control('amani_options[sidebar_position]', array(
+			'settings' => 'amani_options[sidebar_position]',
+			'label' => esc_html__('Sidebar Position', 'amani'),
+			'section' => 'amani_options[content]',
+			'type' => 'select',
+			'choices' => $sidebar_positions,
+		));
+	}
 
 	// Blog Layout
 
-	$blog_layouts = array_flip($amani['blog_layouts']);
+	if($amani['blog_layout'] != '') {
+		$blog_layouts = array_flip($amani['blog_layouts']);
 
-	$wp_customize->add_setting('amani_options[blog_layout]', array(
-		'default' => $amani['blog_layout'],
-		'sanitize_callback' => 'sanitize_text_field',
-		'capability' => 'edit_theme_options',
-		'type' => 'option',
-		'transport' => 'postMessage'
-	));
-	$wp_customize->add_control('amani_options[blog_layout]', array(
-		'settings' => 'amani_options[blog_layout]',
-		'label' => esc_html__('Blog Layout', 'amani'),
-		'section' => 'amani_options[content]',
-		'type' => 'select',
-		'choices' => $blog_layouts,
-	));
+		$wp_customize->add_setting('amani_options[blog_layout]', array(
+			'default' => $amani['blog_layout'],
+			'sanitize_callback' => 'sanitize_text_field',
+			'capability' => 'edit_theme_options',
+			'type' => 'option',
+			'transport' => 'postMessage'
+		));
+		$wp_customize->add_control('amani_options[blog_layout]', array(
+			'settings' => 'amani_options[blog_layout]',
+			'label' => esc_html__('Blog Layout', 'amani'),
+			'section' => 'amani_options[content]',
+			'type' => 'select',
+			'choices' => $blog_layouts,
+		));
+	}
 
 	// Social Share
 

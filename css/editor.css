@@ -3469,6 +3469,11 @@ readers do not read off random characters that represent icons */
 .theme-body.c-default .content .comments .children {
   border-left: 3px solid rgba(0, 0, 0, 0.1);
 }
+@media (max-width: 1000px) {
+  .theme-body.c-default .content .comments .children {
+    border-left: 0;
+  }
+}
 .theme-body.c-default .content .comments .reply a {
   text-shadow: none;
   font-weight: 400;
@@ -3813,6 +3818,11 @@ readers do not read off random characters that represent icons */
 .theme-body.c-inversed .content .comments .children {
   border-left: 3px solid rgba(255, 255, 255, 0.1);
 }
+@media (max-width: 1000px) {
+  .theme-body.c-inversed .content .comments .children {
+    border-left: 0;
+  }
+}
 .theme-body.c-inversed .content .comments .reply a {
   text-shadow: none;
   font-weight: 400;
@@ -3951,8 +3961,12 @@ readers do not read off random characters that represent icons */
   color: #000;
 }
 .theme-body.b-default.top_featured_layout-squared .featured-top .post-category a,
-.theme-body.b-default.top_featured_layout-rounded .featured-top .post-category a {
+.theme-body.b-default.top_featured_layout-rounded .featured-top .post-category a,
+.theme-body.b-default .featured-bottom .post-category a {
   color: #fff;
+}
+.theme-body.b-default.theme-body.body-content-same-color:not(.has-gradient) .content-singular {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .theme-body.b-default.top_featured_layout-trio .featured-top,
 .theme-body.b-default.top_featured_layout-slideshow .featured-top {
@@ -4047,6 +4061,9 @@ readers do not read off random characters that represent icons */
 .theme-body.b-default .responsive-wrap .search-trigger i {
   color: #000;
 }
+.theme-body.b-default .responsive-wrap .responsive-nav li.active > a {
+  color: #fff;
+}
 .theme-body.b-default .responsive-menu-trigger {
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
@@ -4091,11 +4108,12 @@ readers do not read off random characters that represent icons */
 .theme-body.b-default .theme-menu div > ul > li.menu-item-has-children {
   color: #000;
 }
-.theme-body.b-default .theme-menu div > ul > li li a {
-  background: #fff;
-}
-.theme-body.b-default .theme-menu div > ul > li li a:hover {
+.theme-body.b-default .theme-menu div > ul > li li:hover > a {
   color: #fff;
+}
+.theme-body.b-default .theme-menu div > ul > li li a {
+  color: #fff;
+  background: #000;
 }
 .theme-body.b-default .widget.widget_calendar thead {
   background: #f8f8f7;
@@ -4245,8 +4263,12 @@ readers do not read off random characters that represent icons */
   color: #fff;
 }
 .theme-body.b-inversed.top_featured_layout-squared .featured-top .post-category a,
-.theme-body.b-inversed.top_featured_layout-rounded .featured-top .post-category a {
+.theme-body.b-inversed.top_featured_layout-rounded .featured-top .post-category a,
+.theme-body.b-inversed .featured-bottom .post-category a {
   color: #fff;
+}
+.theme-body.b-inversed.theme-body.body-content-same-color:not(.has-gradient) .content-singular {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .theme-body.b-inversed.top_featured_layout-trio .featured-top,
 .theme-body.b-inversed.top_featured_layout-slideshow .featured-top {
@@ -4341,6 +4363,9 @@ readers do not read off random characters that represent icons */
 .theme-body.b-inversed .responsive-wrap .search-trigger i {
   color: #fff;
 }
+.theme-body.b-inversed .responsive-wrap .responsive-nav li.active > a {
+  color: #fff;
+}
 .theme-body.b-inversed .responsive-menu-trigger {
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
@@ -4385,11 +4410,12 @@ readers do not read off random characters that represent icons */
 .theme-body.b-inversed .theme-menu div > ul > li.menu-item-has-children {
   color: #fff;
 }
-.theme-body.b-inversed .theme-menu div > ul > li li a {
-  background: #000;
-}
-.theme-body.b-inversed .theme-menu div > ul > li li a:hover {
+.theme-body.b-inversed .theme-menu div > ul > li li:hover > a {
   color: #fff;
+}
+.theme-body.b-inversed .theme-menu div > ul > li li a {
+  color: #fff;
+  background: #000;
 }
 .theme-body.b-inversed .widget.widget_calendar thead {
   background: #111;

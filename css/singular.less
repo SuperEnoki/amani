@@ -161,6 +161,10 @@ body.single, body.page {
 	}
 
 	.singular-featured {
+		width: 100vw;
+		margin-left: 50%;
+		transform: translateX(-50%);
+		max-width: 1920px;
 		img {
 			height: auto !important;
 		}
@@ -170,18 +174,19 @@ body.single, body.page {
 		margin-left: auto;
 		margin-right: auto;
 		padding-bottom: 50px;
+		.post-category {
+			margin-top: @pad;
+		}
 		.post-title {
 			max-width: @post;
 			margin: 0;
 			padding: 0;
 			margin-left: auto;
 			margin-right: auto;
-			padding-top: @padb;
-			padding-bottom: @padb;
+			padding-top: @pad;
+			padding-bottom: @pad;
 			@media (max-width: 700px) {
 				font-size: 34px;
-				padding-top: @pad;
-				padding-bottom: @pad;
 			}
 		}
 		.post-header-big {
@@ -306,6 +311,9 @@ body.page {
 		@media (max-width: 700px) {
 			margin-bottom: 15px;
 		}
+	}
+	.content-singular {
+		border-bottom: 0 !important;
 	}
 }
 
@@ -487,7 +495,6 @@ body.page.page-template-custom-full-width {
 		margin: 10px 0;
 		padding: 0 0 0 30px;
 		@media (max-width: 1000px) {
-			border-left: 0;
 			padding: 0;
 		}
 	}

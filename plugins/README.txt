@@ -1,1 +1,0 @@
-Plugins are updated with new theme release, but newest plugin versions always available here: https://wordpress.org/plugins/

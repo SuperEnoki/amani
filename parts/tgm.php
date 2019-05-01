@@ -32,7 +32,7 @@ function amani_theme_register_required_plugins() {
 		array(
 			'name'			=> esc_html__('Bekento Tools 4', 'amani'),
 			'slug'			=> 'bekento-tools-4',
-			'source'			=> esc_url('https://bekento.space/plugins/bekento-tools-4.zip'),
+			'source'			=> get_stylesheet_directory() . '/plugins/bekento-tools-4.zip',
 		),
 
 		array(

@@ -41,6 +41,11 @@
 		padding-left: @pad;
 		padding-right: @pad;
 		margin-bottom: @pad;
+		@media (max-width: 740px) {
+			padding-left: 0;
+			padding-right: 0;
+			margin-bottom: 15px;
+		}
 		h1 {
 			margin: 0;
 			padding: 0;
@@ -53,9 +58,15 @@
 			margin-left: auto;
 			margin-right: auto;
 			margin-bottom: 30px;
+			text-align: center;
 		}
 		.author-bio {
 			padding-top: 20px;
+			@media (max-width: 740px) {
+				.person, .person:last-child, .person:first-child {
+					margin-bottom: @pad;
+				}
+			}
 		}
 	}
 }
@@ -173,6 +184,11 @@
 					height: 350px;
 				}
 			}
+			.post-wrap {
+				margin-left: auto;
+				margin-right: auto;
+				max-width: @post;
+			}
 		}
 	}
 }
@@ -188,6 +204,7 @@
 	article {
 		@icon-size: 80px;
 		@icon-font-size: 24px;
+		
 		&.format-link, &.format-quote, &.format-status, &.format-chat {
 			.post-image-wrap {
 				&:after {
@@ -199,11 +216,23 @@
 				}
 			}
 		}
+
 		&.format-link {
 			.excerpt {
 				display: none;
 			}
 		}
+
+		&.format-gallery, &.format-image {
+			.post-image-wrap {
+				&:hover {
+					.post-image-cover {
+						transform: none;
+					}
+				}
+			}
+		}
+
 		.post-image-wrap {
 			margin-left: auto;
 			margin-right: auto;
@@ -242,19 +271,32 @@
 		padding-left: 0;
 		section {
 			padding: @pad;
+			@media (max-width: 740px) {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
 		}
 	}
 
 	.archive-header {
 		h1 {
-			margin-top: 30px;
+			margin-top: @pad;
 			margin-bottom: @pad;
+			@media (max-width: 740px) {
+				margin-bottom: 15px;
+			}
 		}
 		.author-bio {
 			padding-top: 50px;
+			@media (max-width: 740px) {
+				padding-top: @pad;
+			}
+		}
+		@media (max-width: 740px) {
+			padding-left: 15px;
+			padding-right: 15px;
 		}
 	}
-
 
 	.empty-search {
 		padding-top: @pad;
@@ -304,7 +346,17 @@
 					.post-wrap {
 						padding-left: @pad;
 						padding-right: @pad;
+						@media (max-width: 740px) {
+							padding-left: 15px;
+							padding-right: 15px;
+						}
 					}
+				}
+			}
+
+			&.format-image, &.format-gallery {
+				.excerpt {
+					display: none;
 				}
 			}
 
@@ -375,7 +427,7 @@
 	}
 }
 
-.grid-item {
+.blog_layout-masonry .content .grid-item {
 	transition: all 500ms ease-in-out;
 	opacity: 0;
 	&.visible {
@@ -483,10 +535,7 @@
 	}
 
 	&.format-image, &.format-gallery {
-		.excerpt {
-			display: none;
-		}
-		.post-image:before {
+		.post-image:before, .post-image-cover:before {
 			content: '';
 			.animate;
 			position: absolute;
@@ -496,9 +545,9 @@
 			bottom: 20px;
 			border: 1px solid #fff;
 		}
-		.post-image-wrap {
+		.post-image-wrap, .post-image-cover {
 			&:hover {
-				.post-image:before {
+				.post-image:before, .post-image-cover:before {
 					top: 10px;
 					left: 10px;
 					right: 10px;

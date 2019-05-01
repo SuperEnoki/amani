@@ -312,6 +312,10 @@ nav.navigation {
 	margin-right: auto;
 	text-align: right;
 
+	@media (max-width: 740px) {
+		text-align: center;
+	}
+
 	.nav-links {
 		width: 100%;
 		margin-top: 50px;
@@ -438,14 +442,14 @@ nav.navigation {
 		.person {
 			flex: 1 1 100%;
 			&:nth-child(even), &:nth-child(odd), &:only-child {
-				text-align: left;
+				text-align: center;
 				.text {
 					margin-right: auto;
 					margin-left: 0;
 				}
 				.picture {
 					margin-right: auto;
-					margin-left: 0;
+					margin-left: auto;
 				}
 			}
 		}
