@@ -1,3 +1,5 @@
+// Content body <> content same color no border no padding (not in masonry)
+
 .theme-body.body-content-same-color:not(.has-gradient):not(.blog_layout-masonry) .content {
 	padding-right: 0;
 	padding-left: 0;
@@ -7,6 +9,12 @@
 		padding-left: 15px;
 	}
 }
+
+.theme-body.body-content-same-color:not(.has-gradient):not(.blog_layout-masonry) nav.navigation .nav-links {
+	margin-top: 0;
+}
+
+// Section body <> content same color no border no padding
 
 .theme-body.body-content-same-color:not(.has-gradient) aside.main-sidebar section {
 	padding: 0;
@@ -217,12 +225,6 @@
 			}
 		}
 
-		&.format-link {
-			.excerpt {
-				display: none;
-			}
-		}
-
 		&.format-gallery, &.format-image {
 			.post-image-wrap {
 				&:hover {
@@ -230,6 +232,12 @@
 						transform: none;
 					}
 				}
+			}
+		}
+
+		&.format-link {
+			.excerpt {
+				display: none;
 			}
 		}
 
