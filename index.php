@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class='content content-feed'>
+<div class='content content-feed content-home'>
 
 	<?php
 

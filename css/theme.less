@@ -40,6 +40,9 @@
 			position: absolute;
 			top: @pad;
 			left: @pad;
+			a {
+				color: #fff;
+			}
 		}
 	}
 	@media (min-width: 1100px) {
@@ -287,6 +290,30 @@
 	}
 }
 
+.theme-body.b-default, .theme-body.b-inversed {
+	&.top_featured_layout-trio .featured-top, &.top_featured_layout-slideshow .featured-top  {
+		color: #fff;
+		a {
+			color: #fff;
+		}
+		h1,h2,h3,h4,h5,h6 {
+			color: #fff;
+		}
+		.post-meta {
+			color: #fff;
+			a {
+				color: #fff;
+				&:hover {
+					border-bottom-color: #fff;
+				}
+			}
+			span:before {
+				color: #fff;
+			}
+		}
+	}
+}
+
 .featured-top, .featured-bottom {
 	article {
 		.post-image-wrap {
@@ -318,6 +345,12 @@
 			}
 		}
 
+		&.format-image, &.format-gallery {
+			.post-image:before, .post-image-cover:before {
+				display: none;
+			}
+		}
+		
 		.post-title {
 			padding-left: @pad;
 			padding-right: @pad;

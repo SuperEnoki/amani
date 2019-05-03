@@ -122,13 +122,29 @@ input[type='submit'], a.button, .default-button, button.button, .wp-block-button
 
 /* Wrapper */
 
+body:not(.single):not(.page) {
+	.theme-body.has-gradient {
+		.wrapper {
+			padding-left: @pad;
+			padding-right: @pad;
+			@media (max-width: 740px) {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+	}
+}
+
+.theme-body:not(.has-gradient) {
+	header.header-main, footer.footer-main, .top-nav, .content-feed {
+		padding-left: @pad;
+		padding-right: @pad;
+	}
+}
+
 .wrapper {
 	position: relative;
-	padding-left: @pad;
-	padding-right: @pad;
 	@media (max-width: 740px) {
-		padding-left: 0;
-		padding-right: 0;
 		header.header-main, footer.footer-main, .top-nav {
 			padding-left: 15px;
 			padding-right: 15px;
