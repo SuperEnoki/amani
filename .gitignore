@@ -1,1 +1,5 @@
 node_modules/
+css/style.css
+css/editor.css
+languages/theme.pot
+webfonts/
