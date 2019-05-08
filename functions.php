@@ -11,7 +11,7 @@
 	$amani['logo_uppercase']        = true;
 	$amani['lead']                  = false;
 
-	$amani['header_layout']         = 'three';
+	$amani['header_layout']         = 'four';
 
 	// Content
 
