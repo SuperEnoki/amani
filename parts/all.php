@@ -31,6 +31,7 @@ function amani_theme_setup() {
 	register_nav_menus(
 		array(
 			'main-nav' => esc_html__('Main Menu', 'amani'),
+			'secondary-nav' => esc_html__('Secondary Menu', 'amani'),
 			'footer-nav' => esc_html__('Footer Menu', 'amani'),
 			'responsive-nav' => esc_html__('Responsive Menu', 'amani')
 		)
@@ -463,8 +464,9 @@ function amani_body_class() {
 		$classes[] = 'sidebar_position-hidden';
 	}
 
+	$classes[] = 'style_set-'.esc_attr(amani_get_option('style_set', $amani['style_set']));
 	$classes[] = 'blog_layout-'.esc_attr(amani_get_option('blog_layout', $amani['blog_layout']));
-
+	$classes[] = 'header_layout-'.esc_attr(amani_get_option('header_layout', $amani['header_layout']));
 	$classes[] = 'top_featured_layout-'.esc_attr(amani_get_option('top_featured_layout', $amani['top_featured_layout']));
 
 	$checkboxes = array('social_share', 'infinite_scroll', 'colored_categories');

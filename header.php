@@ -31,28 +31,28 @@ if(function_exists('wpiw_widget')) {
 
 <header class='header header-main'>
 
-	<div class='header-wrap'>
+	<div class='header-wrap header-essentials'>
 
 		<?php
 			echo amani_social_images();
 		?>
+
+		<nav class='theme-menu secondary-nav'>
+			<?php wp_nav_menu(array('theme_location'=>'secondary-nav')); ?>
+		</nav>
+
+		<?php echo amani_theme_logo(); ?>
+		<button class='responsive-menu-trigger'></button>
+
+		<nav class='theme-menu main-nav'>
+			<?php wp_nav_menu(array('theme_location'=>'main-nav')); ?>
+		</nav>
 
 		<div class='search-trigger-wrap'>
 			<button class='search-trigger'><i class="fas fa-search"></i></button>
 		</div>
 
 	</div>
-
-	<div class='header-wrap'>
-
-		<?php echo amani_theme_logo(); ?>
-		<button class='responsive-menu-trigger'></button>
-
-	</div>
-
-	<nav class='header-wrap theme-menu main-nav'>
-		<?php wp_nav_menu(array('theme_location'=>'main-nav')); ?>
-	</nav>
 
 	<?php
 	// Featured users

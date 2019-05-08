@@ -4,7 +4,7 @@
 
 	<?php if (have_posts()) while (have_posts()) : the_post(); ?>
 
-		<?php if(has_post_thumbnail()) { ?>
+		<?php if(has_post_thumbnail() && !has_post_format(array('video', 'audio', 'gallery'))) { ?>
 
 		<div class='post-header-big'>
 
@@ -28,7 +28,7 @@
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-			<?php if(!has_post_thumbnail()) { ?>
+			<?php if(!has_post_thumbnail() || has_post_format(array('video', 'audio', 'gallery'))) { ?>
 
 				<?php get_template_part('meta-category'); ?>
 				

@@ -1,3 +1,15 @@
+8 May 2019
+
+- Added Style Sets capability for future style sets
+- Inside singular Video / Audio / Gallery posts featured image is now hidden
+
+3 May 2019
+
+- Fixed coloring without gradient
+- Margin fixes inside author archive
+- When no gradient added header / footer border to separate from content
+- Dark theme for body now does not have menu theme shadow
+
 1 May 2019
 
 - Added styles for image / gallery post in grid layout

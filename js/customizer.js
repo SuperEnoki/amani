@@ -18,6 +18,17 @@ jQuery(document).ready(function($) {
 	// Also in options.js (plugin) styles.php (x2) customizer.js
 	var gradients_selectors = '.body-bg, .responsive-nav, .search-wrap, .fourofour, .empty-cat h2, .archive-header h1, h1.post-title, .title-search-no-results';
 
+	// Header Layout
+
+	wp.customize('amani_options[header_layout]', function(value) {
+		value.bind(function(to) {
+			if(to) {
+				$('body').removeClass('header_layout-one header_layout-two header_layout-three');
+				$('body').addClass('header_layout-' + to);
+			}
+		});
+	});
+
 	// Logo Image
 
 	wp.customize('amani_options[logo]', function(value) {

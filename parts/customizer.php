@@ -58,6 +58,27 @@ function amani_customize_register($wp_customize) {
 		'priority' => 20,
 	));
 
+	// Header Layout
+
+	if($amani['header_layout'] != '') {
+		$header_layouts = array_flip($amani['header_layouts']);
+
+		$wp_customize->add_setting('amani_options[header_layout]', array(
+			'default' => $amani['header_layout'],
+			'sanitize_callback' => 'sanitize_text_field',
+			'capability' => 'edit_theme_options',
+			'type' => 'option',
+			'transport' => 'postMessage'
+		));
+		$wp_customize->add_control('amani_options[header_layout]', array(
+			'settings' => 'amani_options[header_layout]',
+			'label' => esc_html__('Header Layout', 'amani'),
+			'section' => 'amani_options[header]',
+			'type' => 'select',
+			'choices' => $header_layouts,
+		));
+	}
+
 	// Logo Font
 
 	$wp_customize->add_setting('amani_options[logo_font]', array(
@@ -248,6 +269,29 @@ function amani_customize_register($wp_customize) {
 		'description' => esc_html__('Customize your content styling. Detailed info in Documentation', 'amani'),
 		'priority' => 30,
 	));
+
+
+	if($amani['style_set'] != '') {
+		foreach ($amani['style_sets'] as $key => $value) {
+			$style_sets[$key] = $key;
+		}
+
+		// Style Sets
+
+		$wp_customize->add_setting('amani_options[style_set]', array(
+			'default' => $amani['style_set'],
+			'sanitize_callback' => 'sanitize_text_field',
+			'capability' => 'edit_theme_options',
+			'type' => 'option'
+		));
+		$wp_customize->add_control('amani_options[style_set]', array(
+			'settings' => 'amani_options[style_set]',
+			'label' => esc_html__('Style Set', 'amani'),
+			'section' => 'amani_options[content]',
+			'type' => 'select',
+			'choices' => $style_sets,
+		));
+	}
 
 	// Color Schemes
 

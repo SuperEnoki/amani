@@ -9,14 +9,9 @@
 	$amani['logo_weight']           = '600';
 	$amani['logo_italic']           = false;
 	$amani['logo_uppercase']        = true;
-
 	$amani['lead']                  = false;
 
-	$amani['heading_font']          = 'Comfortaa';
-	$amani['heading_uppercase']     = false;
-	$amani['heading_size']          = '52px';
-	$amani['heading_weight']        = '700';
-	$amani['heading_italic']        = false;
+	$amani['header_layout']         = 'three';
 
 	// Content
 
@@ -28,6 +23,12 @@
 	$amani['top_featured_layout']   = 'squared';
 
 	$amani['body_font']             = 'Quicksand';
+
+	$amani['heading_font']          = 'Comfortaa';
+	$amani['heading_uppercase']     = false;
+	$amani['heading_size']          = '52px';
+	$amani['heading_weight']        = '700';
+	$amani['heading_italic']        = false;
 
 	$amani['color_scheme']          = '#ff71ce #01cdfe #29eaa1 #b967ff #ffe13c';
 	$amani['color1']                = '#ff71ce';
@@ -41,8 +42,39 @@
 	$amani['content_bg']            = '#ffffff';
 	$amani['content_bg_coloring']   = 'default';
 
+	$amani['style_set']             = ''; # To enable set 'Custom'
+
+	// Style Sets
+
+	// Custom, won't change the settings set by user in Customizer
+	$amani['style_sets']['Custom'] = array();
+
+	$amani['style_sets']['Vaporwave'] = array(
+		'logo_font' 					=> 'Satisfy',
+		'logo_size'						=> '54px',
+		'heading_font'					=> 'Open Sans',
+		'heading_weight'				=> '400',
+		'body_font'						=> 'Segoe UI, San Francisco',
+		'logo_uppercase' 				=> false,
+		'header_layout'				=> 'four',
+		'blog_layout'					=> 'list',
+		'top_featured_layout'		=> 'slideshow',
+	);
+
 	// Getting theme options from database and storing it in array
 	$amani['db_options'] = get_option('amani_options');
+
+	if($amani['style_set'] != '') {
+		// If the style set is set in customizer we will replace values from customizer with pre-configured before in this file
+		if(isset($amani['db_options']['style_set'])) {
+			$amani_selected_style_set = $amani['db_options']['style_set'];
+		} else {
+			$amani_selected_style_set =  $amani['style_set'];
+		}
+		foreach ($amani['style_sets'][$amani_selected_style_set] as $key => $value) {
+			$amani['db_options'][$key] = $value;
+		}
+	}
 
 	// Getting option from array
 	function amani_get_option($req_option, $default='') {
@@ -114,6 +146,15 @@
 	$amani['colorings'] = array(
 		'White'  => 'default',
 		'Dark'   => 'inversed',
+	);
+
+	// Header layouts
+
+	$amani['header_layouts'] = array(
+		'Menu on the Right Side' => 'one',
+		'Centered Logo + Two Menus on Sides' => 'two',
+		'Centered Menu + Search Button' => 'three',
+		'Menu Below Logo' => 'four'
 	);
 
 	// Top Featured Layouts

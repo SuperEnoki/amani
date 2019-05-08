@@ -4,11 +4,8 @@ header.header-main {
 
 	padding-top: @pad;
 
-	.header-wrap:first-child {
-		justify-content: space-between;
-		@media (max-width: 1000px) {
-			display: none;
-		}
+	.header-essentials {
+		z-index: 100;
 	}
 
 	.logo-wrap {
@@ -65,11 +62,113 @@ header.header-main {
 
 	@media (max-width: 1000px) {
 		padding-bottom: 0;
-		.main-nav {
-			display: none;
+		.header-essentials {
+			.main-nav {
+				display: none;
+			}
+			.secondary-nav {
+				display: none;
+			}
+			.search-trigger-wrap {
+				display: none;
+			}
+			.social-wrap {
+				display: none;
+			}
 		}
 	}
-	
+}
+
+/* Header Layouts */
+
+.header_layout-one {
+	@media (min-width: 1000px) {
+		.header-essentials {
+			justify-content: space-between;
+			> .secondary-nav {
+				display: none;
+			}
+			> .search-trigger-wrap {
+				display: none;
+			}
+			> .social-wrap {
+				display: none;
+			}
+		}
+	}
+}
+
+.header_layout-two {
+	@media (min-width: 1000px) {
+		.header-essentials {
+			justify-content: space-between;
+			> .search-trigger-wrap {
+				display: none;
+			}
+			> .social-wrap {
+				display: none;
+			}
+			> .logo-wrap {
+				margin-left: 50px;
+				margin-right: 50px;
+			}
+			> .secondary-nav {
+				div > ul	> li > ul ul {
+					left: 100%;
+					right: auto;
+				}
+			}
+			> .main-nav {
+				div > ul	> li > ul ul {
+					left: auto;
+					right: 100%;
+				}
+			}
+		}
+	}
+}
+
+.header_layout-three {
+	@media (min-width: 1000px) {
+		.header-essentials {
+			justify-content: space-between;
+			> .secondary-nav {
+				display: none;
+			}
+			> .social-wrap {
+				display: none;
+			}
+		}
+	}
+}
+
+.header_layout-four {
+	@media (min-width: 1000px) {
+		.header-essentials {
+			justify-content: center;
+			flex-wrap: wrap;
+			> .secondary-nav {
+				display: none;
+			}
+			> .logo-wrap {
+				margin-top: @padb;
+				margin-bottom: @pad;
+				flex: 0 0 100%;
+				text-align: center;
+			}
+			> .social-wrap {
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+			> .search-trigger-wrap {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
 }
 
 footer.footer-main {
@@ -173,9 +272,6 @@ header.header-main, footer.footer-main {
 }
 
 .header-wrap {
-	&.theme-menu {
-		z-index: 100;
-	}
 	@media (max-width: 1000px) {
 		margin-bottom: @pad;
 	}
@@ -191,9 +287,12 @@ header.header-main, footer.footer-main {
 
 .theme-menu {
 	text-align: center;
+	z-index: 100;
+	position: relative;
 	div > ul {
 		font-size: @menu-font-size;
 		display: flex;
+		justify-content: center;
 		flex-wrap: wrap;
 		> li {
 			margin: 0 10px;
