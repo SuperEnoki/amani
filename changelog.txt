@@ -1,7 +1,12 @@
-8 May 2019
+11 May 2019
 
-- Added Style Sets capability for future style sets
+- Added Header Layouts
 - Inside singular Video / Audio / Gallery posts featured image is now hidden
+- Images in list / standard / grid layouts now appear after they load
+- Fixed textarea line-height
+- Fixed author box padding inside posts
+- Centered footer menu on mobile
+- Added Style Sets capability for future style sets
 
 3 May 2019
 

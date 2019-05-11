@@ -80,10 +80,8 @@
 
 			<?php $authorID = get_the_author_meta('ID');
 			if(get_the_author_meta('description', $authorID)) {
-				echo "<div class='archive-header'>";
 				$featured_users = array($authorID);
 				amani_featured_users($featured_users);
-				echo "</div>";
 			}
 			?>
 
