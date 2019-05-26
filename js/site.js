@@ -65,7 +65,14 @@ jQuery(document).ready(function($) {
 		if($('body').hasClass('menu-active')) {
 			$('body').removeClass('menu-active');
 		} else {
+			history.pushState({id: 'menu'}, '', '');
 			$('body').addClass('menu-active');
+		}
+	});
+
+	window.addEventListener("popstate", function(e) {
+		if(history.state.id == 'menu') {
+			$('body').removeClass('menu-active');
 		}
 	});
 
