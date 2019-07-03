@@ -6,6 +6,10 @@ Vaporwave design, rounded fonts, perfect typography and content in the first pla
 
 Internet in '80s was not in masses yet, nevertheless theme is fully social, you can create social widgets in footer, sidebar or mixed with blog posts, integrate Instagram feed into your blog and add links on other social networks you are using.
 
+**Theme Demo**
+
+https://showcase.bekento.space/amani/
+
 **Key Features**
 
 - Gutenberg Editor Support
