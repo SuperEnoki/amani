@@ -8,17 +8,18 @@ Internet in '80s was not in masses yet, nevertheless theme is fully social, you 
 
 **Key Features**
 
-Gutenberg Editor Support
-'80s Aesthetics & Color Schemes
-Multiple Blog Layouts
-Colored Categories
-Sidebar Mixed with Posts
-Integrated Google Fonts
-Cool post types styling
-Very fast on cheap servers
-30+ Live Customizer Options
-Minutes to Read Plugin
-Only 1 JavaScript file on Frontend
+- Gutenberg Editor Support
+- '80s Aesthetics & Color Schemes
+- Multiple Blog & Header Layouts
+- Colored Categories
+- Sidebar Mixed with Posts
+- Integrated Google Fonts
+- Cool post types styling
+- Very fast on cheap servers
+- 30+ Live Customizer Options
+- Minutes to Read Plugin
+- Standard Fonts or Any Google Fonts
+- Only 1 JavaScript file on Frontend
 
 **Support**
 
