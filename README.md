@@ -28,3 +28,7 @@ https://showcase.bekento.space/amani/
 **Support**
 
 If you like the theme you can support it at Patreon https://www.patreon.com/lukestateson
+
+**License**
+
+This theme is licensed under MIT License and can be used absolutely free for personal / commercial use.
